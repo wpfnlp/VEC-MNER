@@ -1,0 +1,27 @@
+seed: 1234
+
+bert_name: "/home/wpf/pretrain_model/bert-base-uncased/"
+vit_name: "/home/wpf/pretrain_model/clip-vit-base-patch32/"
+# vit_name: "/home/wpf/pretrain_model/CLIP-ViT-B-32-laion2B-s34B-b79K/"
+device: cuda:0
+
+num_epochs: 40
+batch_size: 32
+# 74.89,3e-5,5e-2,1e-3,0.05,get_cosine_schedule_with_warmup sigmoid 40
+# 74.85,3e-5,5e-2,1e-3,0.05,get_cosine_schedule_with_warmup softmax 40
+lr: 3e-5
+crf_lr: 5e-2
+weight_decay: 1e-3
+warmup_ratio: 0.05
+eval_begin_epoch: 1
+clip_grad_norm: 1.0
+
+max_seq: 40
+aux_size: 128
+rcnn_size: 64
+ignore_idx: 0
+
+save_path: "checkpoints/twitter15"
+load_path: null
+
+dataset_name: 'twitter15'
