@@ -2,13 +2,19 @@
 Implementation of Our Paper "**VEC-MNER: Hybrid Transformer with Visual-Enhanced Cross-Modal Multi-level Interaction for Multimodal NER**" in ACM ICMR 2024. This Implementation is based on the [DeepKE](https://github.com/zjunlp/DeepKE).
 
 ## Model Architecture
-![model](VEC-MNER-Model.png)
+<div align=center>
+<img src="VEC-MNER-Model.png" width="85%" height="85%"/>
+</div>
+<!-- ![model](VEC-MNER-Model.png) -->
 
 The Overall Framework of Our Proposed **VEC-MNER** Model. We propose <ins>a new homogeneous Hybrid Transformer Architecture</ins>, which naturally reduces the heterogeneity. Moreover, we design the **Correlation-Aware Alignment (CAA-Encoder)** layer and the **Correlation-Aware Deep Fusion (CADF-Encoder)** layer, combined with contrastive learning, to achieve more effective implicit alignment and deep semantic fusion between modalities, respectively. We also construct a **Correlation-Aware (CA)** module that can effectively reduce heterogeneity between modalities and alleviate visual deviation. Experimental results demonstrate that our approach achieves SOTA performance, achieving 74.89\% and 87.51\% F1-score on Twitter-2015 and Twitter-2017, respectively.
 
 ## Experiment
 The overall experimental results on VEC-MNER for Multi-Modal NER task can be seen as follows:
-![Experimental results](VEC-MNER-Experiment.png)
+<div align=left>
+<img src="VEC-MNER-Experiment.png" width="85%" height="85%"/>
+</div>
+<!-- ![Experimental results](VEC-MNER-Experiment.png) -->
 
 ## Installation
 Clone the newest repository:
